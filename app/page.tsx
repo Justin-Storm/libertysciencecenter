@@ -58,7 +58,7 @@ export default function Page() {
 
   return (
     <div className="min-h-svh bg-slate-950 scroll-smooth">
-      <header className="z-[999] shadow-xl shadow-white/5 fixed top-4 left-1/2 backdrop-blur-md bg-black/40 -translate-x-1/2 flex gap-4 h-fit border border-white/10 p-2 rounded-2xl">
+      <header className="z-[999] shadow-xl shadow-white/10 fixed top-2 left-1/2 backdrop-blur-sm bg-black/50 -translate-x-1/2 flex gap-4 h-fit border p-3 rounded-2xl">
         <Tabs value={activeTab} className="mx-auto">
           <TabsList variant={'line'}>
             {NAV_ITEMS.map((item) => (
