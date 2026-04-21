@@ -77,7 +77,7 @@ export default function GalleryScreen() {
       {/* Lightbox */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4"
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/90 backdrop-blur-md p-4"
           onClick={() => setSelectedImage(null)}
         >
           <div
