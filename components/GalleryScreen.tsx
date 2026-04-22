@@ -87,7 +87,7 @@ export default function GalleryScreen() {
             {/* Close button */}
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white/60 hover:text-white transition-colors text-sm uppercase tracking-widest font-bold flex items-center gap-2"
+              className="absolute top-5 right-0 text-white/60 hover:text-white transition-colors text-sm uppercase tracking-widest font-bold flex items-center gap-2"
             >
               <span>Close</span>
               <span className="text-lg leading-none">✕</span>
