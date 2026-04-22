@@ -77,17 +77,17 @@ export default function GalleryScreen() {
       {/* Lightbox */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/90 backdrop-blur-md p-4"
+          className="fixed relative inset-0 z-[999] flex items-center justify-center bg-black/90 backdrop-blur-md p-4"
           onClick={() => setSelectedImage(null)}
         >
           <div
-            className="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center gap-4"
+            className="max-w-5xl w-full max-h-[90vh] flex flex-col items-center gap-4"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-5 right-0 text-white/60 hover:text-white transition-colors text-sm uppercase tracking-widest font-bold flex items-center gap-2"
+              className="absolute top-5 right-5 text-white/60 hover:text-white transition-colors text-sm uppercase tracking-widest font-bold flex items-center gap-2"
             >
               <span>Close</span>
               <span className="text-lg leading-none">✕</span>
